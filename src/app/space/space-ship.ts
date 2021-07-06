@@ -1,12 +1,16 @@
-export class SpaceShip {
-  modelName: string;
-  imageUrl: string;
-  health = 100;
-  activeShields = true;
-  activeWeapons = false;
+import { Pilot } from './pilot';
 
-  constructor(modelName: string, imageUrl: string) {
+export class SpaceShip {
+  public modelName: string;
+  public imageUrl: string;
+  public health = 100;
+  public activeShields = true;
+  public activeWeapons = false;
+  public pilot?: Pilot;
+
+  constructor(modelName: string, imageUrl: string, pilot?: Pilot) {
     this.modelName = modelName;
     this.imageUrl = imageUrl;
+    this.pilot = pilot;
   }
 }
