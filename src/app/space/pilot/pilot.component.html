@@ -1,0 +1,7 @@
+<h5>{{ pilot.fullName }}</h5>
+
+<div class="images">
+  <img class="pilot" *ngIf="pilot" [src]="pilot.imageUrl" [alt]="pilot.fullName"/>
+</div>
+
+<ng-content></ng-content>
