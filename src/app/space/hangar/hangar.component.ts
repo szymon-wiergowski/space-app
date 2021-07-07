@@ -1,7 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { SpaceShip } from '../space-ship';
-import { FighterShip } from '../fighter-ship';
-import { BomberShip } from '../bomber-ship';
 import { Pilot } from '../pilot';
 import { PilotRoomComponent } from '../pilot-room/pilot-room.component';
 
@@ -18,10 +16,7 @@ export class HangarComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {
-    this.spaceShips.push(new FighterShip(new Pilot('Han Solo', '/assets/han.png')));
-    this.spaceShips.push(new BomberShip(new Pilot('Chewbacca', '/assets/chewbacca.png')));
-  }
+  ngOnInit(): void {}
 
   public setSelectedPilot(pilot: Pilot | null) {
     this.selectedPilot = pilot;
