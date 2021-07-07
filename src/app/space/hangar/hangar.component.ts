@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { SpaceShip } from '../space-ship';
 import { Pilot } from '../pilot';
 import { PilotRoomComponent } from '../pilot-room/pilot-room.component';
+import { SpaceShipService } from '../space-ship.service';
 
 @Component({
   selector: 'app-hangar',
@@ -11,10 +12,9 @@ import { PilotRoomComponent } from '../pilot-room/pilot-room.component';
 export class HangarComponent implements OnInit {
   @ViewChild(PilotRoomComponent) pilotRoom!: PilotRoomComponent;
 
-  public spaceShips: SpaceShip[] = [];
   public selectedPilot: Pilot | null = null;
-
-  constructor() {}
+  public spaceShips = this.spaceShipService.hangarShips;
+  constructor(private spaceShipService: SpaceShipService) {}
 
   ngOnInit(): void {}
 
