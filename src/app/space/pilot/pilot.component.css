@@ -8,3 +8,8 @@
 img {
   max-width: 100%;
 }
+
+.pilot__name{
+  background-color: black;
+  padding: 0.5rem;
+}
