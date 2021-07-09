@@ -8,10 +8,11 @@ import { A2sCommModule } from 'a2s-comm';
 import { SpaceModule } from './space/space.module';
 import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
+import { BlackHoleComponent } from './black-hole/black-hole.component';
 
 @NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, A2sCommModule, SpaceModule, HttpClientModule, SharedModule],
+  declarations: [AppComponent, BlackHoleComponent],
+  imports: [BrowserModule, SpaceModule, AppRoutingModule, A2sCommModule, HttpClientModule, SharedModule],
   providers: [],
   bootstrap: [AppComponent],
 })
