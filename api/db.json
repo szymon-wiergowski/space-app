@@ -1,0 +1,46 @@
+{
+  "pilots": [
+    {
+      "id": 1,
+      "firstName": "Lee",
+      "lastName": "Adama",
+      "imageUrl": "/assets/adama.png"
+    },
+    {
+      "id": 2,
+      "firstName": "Sharon",
+      "lastName": "Valerii",
+      "imageUrl": "/assets/valerii.png"
+    },
+    {
+      "id": 3,
+      "firstName": "Karl",
+      "lastName": "Ahathon",
+      "imageUrl": null
+    },
+    {
+      "id": 4,
+      "firstName": "chewbacca",
+      "lastName": "",
+      "imageUrl": "/assets/chewbacca.png"
+    },
+    {
+      "id": 5,
+      "firstName": "Han",
+      "lastName": "Solo",
+      "imageUrl": "/assets/han.png"
+    },
+    {
+      "id": 6,
+      "firstName": "Stormtrooper",
+      "lastName": "Nr 1",
+      "imageUrl": "/assets/stormtrooper.png"
+    },
+    {
+      "id": 7,
+      "firstName": "Jabba",
+      "lastName": "The Hutt",
+      "imageUrl": "/assets/Jabba-The-Hutt.png"
+    }
+  ]
+}

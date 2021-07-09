@@ -1,12 +1,17 @@
+import { PilotAttrs } from './pilot-attrs';
+
 export class Pilot {
+  public id?: number;
   public firstName = '';
   public lastName = '';
   public imageUrl = '';
   static defaultImageUrl = '/assets/unknown-pilot.png';
 
-  constructor(fullName: string, imageUrl = Pilot.defaultImageUrl) {
-    this.fullName = fullName;
-    this.imageUrl = imageUrl;
+  constructor(attrs: PilotAttrs) {
+    this.id = attrs.id;
+    this.firstName = attrs.firstName;
+    this.lastName = attrs.lastName;
+    this.imageUrl = attrs.imageUrl || Pilot.defaultImageUrl;
   }
 
   public get fullName(): string {
