@@ -27,7 +27,6 @@ export class PilotRoomComponent implements OnInit {
 
   public pilotReturn(pilot: Pilot) {
     this.pilots.push(pilot);
-    console.log('pilots', this.pilots);
   }
 
   public pilotLeave(pilot: Pilot): void {

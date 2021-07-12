@@ -21,4 +21,25 @@ export class PilotService {
   public getPilot(id: number): Observable<Pilot> {
     return this.http.get<Pilot>(`${environment.apiUrl}/pilots/${id}`).pipe(map(pilotAttrs => new Pilot(pilotAttrs)));
   }
+
+  public createPilot(data: PilotAttrs): Observable<Pilot> {
+    return this.http
+      .post<PilotAttrs>(`${environment.apiUrl}/pilots`, data)
+      .pipe(map(pilotAttrs => new Pilot(pilotAttrs)));
+  }
+
+  public updatePilot(data: PilotAttrs): Observable<Pilot> {
+    return this.http
+      .put<PilotAttrs>(`${environment.apiUrl}/pilots/${data.id}`, data)
+      .pipe(map(pilotAttrs => new Pilot(pilotAttrs)));
+  }
+
+  public savePilot(pilotAttrs: PilotAttrs): Observable<Pilot> {
+    console.log(pilotAttrs.id);
+    if (pilotAttrs.id) {
+      return this.updatePilot(pilotAttrs);
+    } else {
+      return this.createPilot(pilotAttrs);
+    }
+  }
 }

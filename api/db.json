@@ -41,6 +41,29 @@
       "firstName": "Karl",
       "lastName": "Ahathon",
       "imageUrl": null
+    },
+    {
+      "id": 11,
+      "firstName": "Szymon",
+      "lastName": "Wiergowski",
+      "imageUrl": "/assets/darth-vader.png"
+    },
+    {
+      "id": 12,
+      "firstName": "Lucy",
+      "lastName": "Lou",
+      "imageUrl": "/assets/unknown-pilot.png"
+    }
+  ],
+  "forbidden-names": [
+    {
+      "name": "Maruda"
+    },
+    {
+      "name": "Ciamajda"
+    },
+    {
+      "name": "Gapcio"
     }
   ]
 }
